@@ -16,8 +16,9 @@ public class PokemonTester {
 	 */
 	public static void main(String[] args) {
 		StatsBuilder test1 = new StatsBuilder();
-		test1.randomAttack();
-		test1.getRandomAttack();
+		test1.randomHealth();
+		test1.getRandomHealth();
+
 
 	}
 

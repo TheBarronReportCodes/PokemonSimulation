@@ -11,49 +11,50 @@ public class StatsBuilder {
 	/** 
 	 * Created three main stats
 	 */
-		private double health;
-		private double attack;
-		private double defense;
-		private double speed;
+		private int health;
+		private int attack;
+		private int defense;
+		private int speed;
 	/** 
 	 * Default constructor
 	 */
 		public StatsBuilder() {
-			this.health = 0.0;
-			this.attack = 0.0;
-			this.defense = 0.0;
-			this.speed = 0.0;
+			this.health = 0;
+			this.attack = 0;
+			this.defense = 0;
+			this.speed = 0;
 		}
 	/** 
 	 * I want the stats to be random, same as any wild pokemon.
 	 *  I want the 	max for any stat to be 100. 
 	 */
 		public void randomHealth() {
-			this.health = this.health + 100 * Math.random();
+			this.health = (int) (this.health + 100 * Math.random());
+			System.out.println(this.health);
 		}
 		public void randomAttack() {
-			this.attack = this.attack + 100 * Math.random();
+			this.attack = (int) (this.attack + 100 * Math.random());
 		}
 		public void randomDefense() {
-			this.defense = this.defense + 100 * Math.random();
+			this.defense = (int) (this.defense + 100 * Math.random());
 		}
 		public void randomSpeed() {
-			this.speed = this.speed + 100 * Math.random();
+			this.speed = (int) (this.speed + 100 * Math.random());
 		}
 	/**
 	 * 
 	 * @return the random output value from the previous method
 	 */
-		public double getRandomHealth() {
+		public int getRandomHealth() {
 			return this.health;
 		}
-		public double getRandomAttack() {
+		public int getRandomAttack() {
 			return this.attack;
 		}
-		public double getRandomDefense() {
+		public int getRandomDefense() {
 			return this.defense;
 		}
-		public double getRandomSpeed() {
+		public int getRandomSpeed() {
 			return this.speed;
 		}
 }
