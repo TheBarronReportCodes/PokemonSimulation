@@ -1,6 +1,3 @@
-/**
- * 
- */
 package tester;
 
 import builder.StatsBuilder;
@@ -15,9 +12,16 @@ public class PokemonTester {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		StatsBuilder test1 = new StatsBuilder();
-		test1.randomHealth();
-		test1.getRandomHealth();
+		StatsBuilder pokemon1 = new StatsBuilder();
+		pokemon1.randomSpeed();
+		pokemon1.randomAttack();
+		pokemon1.randomDefense();
+		pokemon1.randomHealth();
+		System.out.println(pokemon1.getRandomSpeed());
+		System.out.println(pokemon1.getRandomAttack());
+		System.out.println(pokemon1.getRandomDefense());
+		System.out.println(pokemon1.getRandomHealth());
+		
 
 
 	}

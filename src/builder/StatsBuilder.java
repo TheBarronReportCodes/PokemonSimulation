@@ -30,7 +30,6 @@ public class StatsBuilder {
 	 */
 		public void randomHealth() {
 			this.health = (int) (this.health + 100 * Math.random());
-			System.out.println(this.health);
 		}
 		public void randomAttack() {
 			this.attack = (int) (this.attack + 100 * Math.random());
