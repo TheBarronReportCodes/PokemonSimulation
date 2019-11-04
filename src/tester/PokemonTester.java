@@ -29,7 +29,6 @@ public class PokemonTester {
 		System.out.printf("Pokemon attack %d \n", pokemon1.getRandomAttack());
 		System.out.printf("Pokemon defense %d \n", pokemon1.getRandomDefense());
 		System.out.printf("Pokemon health %d \n", pokemon1.getRandomHealth());
-		System.out.printf("Pokemon lifepoints %d \n", pokemon1.lifePoints());
 		
 		System.out.println("\n");
 		pokemon2.randomSpeed();
@@ -40,7 +39,6 @@ public class PokemonTester {
 		System.out.printf("Pokemon attack %d \n", pokemon2.getRandomAttack());
 		System.out.printf("Pokemon defense %d \n", pokemon2.getRandomDefense());
 		System.out.printf("Pokemon health %d \n", pokemon2.getRandomHealth());
-		System.out.printf("Pokemon lifepoints %d \n", pokemon2.lifePoints());
 	}
 
 }

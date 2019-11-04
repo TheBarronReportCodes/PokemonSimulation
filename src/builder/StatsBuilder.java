@@ -40,11 +40,11 @@ public class StatsBuilder {
 		public void randomSpeed() {
 			this.speed = (int) (this.speed + 100 * Math.random());
 		}
-		public int lifePoints() {
-			int lifePoints;
-			lifePoints = this.health - (this.attack - this.defense);
-			return lifePoints;
-		}
+//		public int lifePoints() {
+//			int lifePoints;
+//			lifePoints = this.health - (this.attack - this.defense);
+//			return lifePoints;
+//		}
 	/**
 	 * 
 	 * @return the random output value from the previous method
