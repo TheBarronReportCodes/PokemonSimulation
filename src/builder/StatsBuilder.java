@@ -15,15 +15,17 @@ public class StatsBuilder {
 		private int attack;
 		private int defense;
 		private int speed;
+		
 	/** 
 	 * Default constructor
 	 */
 		public StatsBuilder() {
-			this.health = 0;
-			this.attack = 0;
-			this.defense = 0;
-			this.speed = 0;
+			this.randomHealth();
+			this.randomAttack();
+			this.randomDefense();
+			this.randomSpeed();
 		}
+		
 	/** 
 	 * I want the stats to be random, same as any wild pokemon.
 	 *  I want the 	max for any stat to be 100. 
@@ -45,6 +47,7 @@ public class StatsBuilder {
 //			lifePoints = this.health - (this.attack - this.defense);
 //			return lifePoints;
 //		}
+		
 	/**
 	 * 
 	 * @return the random output value from the previous method
